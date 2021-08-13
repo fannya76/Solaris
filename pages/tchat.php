@@ -92,7 +92,9 @@ include '../datas/pdo_connect.php';
                     <button type="submit" name="submit"><i data-feather="navigation"></i></button>
 
                     <div class="ghostAntenna">
+                    <a href="?page=tchat&nom_salon=<?= $_GET['nom_salon'] ?>&id_salon=<?= $_GET['id_salon'] ?>">
                         <p id="ghost_non_lus"></p>
+                    </a>
 
                     </div>
                 </form>
