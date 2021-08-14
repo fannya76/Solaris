@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
                     $nom = htmlspecialchars(($_POST['user']['nom']));
                     $prenom = htmlspecialchars(($_POST['user']['prenom']));
                     $email = htmlspecialchars(($_POST['user']['email']));
-                    $mdp = password_hash(htmlspecialchars(($_POST['user']['password'])), PASSWORD_DEFAULT);
+                    $mdp = password_hash(($_POST['user']['password']), PASSWORD_DEFAULT);
                     $url_avatar = $_FILES['avatar']['name'];
                     
                     $query = $pdo->prepare("INSERT INTO utilisateur (nom, prenom, email, mot_de_passe, url_avatar) VALUES (:nom, :prenom, :email, :mot_de_passe, :url_avatar)");
