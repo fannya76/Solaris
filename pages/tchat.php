@@ -137,7 +137,7 @@ include '../datas/pdo_connect.php';
                 } else {
                     p_non_lus.textContent = 'Pas de nouveaux messages'
                     ghost_non_lus.style.backgroundColor = 'grey'
-                    ghost_non_lus.textContent = msg_non_lus
+                    ghost_non_lus.textContent = '0'
 
                 }
             }, 3000);
