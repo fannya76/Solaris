@@ -1,7 +1,6 @@
 # Solaris
 
 Service de messagerie instantanée sur le thème de l'espace
-https://solaris-fannya.ml
 
 - Enregistrement des utilisateurs en base de données
 - Enregistrement et affichage de leur image de profil dans les salons
